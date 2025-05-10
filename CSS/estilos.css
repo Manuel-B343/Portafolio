@@ -1,0 +1,195 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo oscuro con contraste */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2C3E50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #900C3F;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header-content h1 {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  /* Contenido principal */
+  main {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #37404d;
+    padding: 50px 40px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Secciones */
+  section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #C70039;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    color: #C70039;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 3px solid #900C3F;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ecf0f1;
+  }
+  
+  /* Estilo de los integrantes en forma de pirámide */
+  .fila {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .fila-uno {
+    margin-bottom: 50px;
+  }
+  
+  .fila-dos {
+    justify-content: space-evenly;
+  }
+  
+  .integrante {
+    background: linear-gradient(135deg, #900C3F, #C70039);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+  }
+  
+  .integrante:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .integrante img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FF4777;
+    box-shadow: 0 0 8px rgba(255, 71, 119, 0.6);
+    margin-bottom: 15px;
+  }
+  
+  .integrante h3 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .integrante p {
+    font-size: 0.95rem;
+    color: #f1f1f1;
+  }
+  
+  /* Diagrama de Gantt */
+  #gantt img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #900C3F;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .fila {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .integrante {
+      width: 80%;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .header-content h1 {
+      font-size: 2rem;
+    }
+  
+    .logo {
+      width: 80px;
+      height: 80px;
+    }
+  
+    main {
+      padding: 30px 20px;
+      margin-top: 10px;
+    }
+  }
+  
+  
