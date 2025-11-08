@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9ecef;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #8b1c2b;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffdada !important;
+}
+
+/* Secciones */
+.section-title {
+  font-weight: 700;
+  color: #8b1c2b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #e63946;
+  display: block;
+  margin: 12px auto;
+  border-radius: 2px;
+}
+
+/* Tarjetas de integrantes */
+.member-card {
+  background-color: #8b1c2b;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.member-card img {
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #8b1c2b;
+  color: white;
+}
+
+.modal-body img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Animaciones */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #8b1c2b;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-height: 80vh; /* Se adapta a la altura de la ventana */
+  width: auto;
+  margin: auto;
+  object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris oscuro translúcido */
+  border-radius: 50%; /* Forma circular */
+  padding: 10px; /* Espacio interno */
+}
